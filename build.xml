@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="Utilities.makeJar" default="main">
+		
+		<target name="main" depends="compile,make_gw-utilities,runTests,copy_gw-utilities, refresh">
+		</target>
+		<property file="build.properties"/>
+		<property name="src.dir" value="src"/>
+		<property name="test.dir" value="tests"/>
+		<property name="build.dir" value="bin"/>
+		<target name="compile">
+			<javac description="Compiling java files" srcdir="${src.dir}" destdir="${build.dir}" classpath="jarfile" debug="on" includeantruntime="true" listfiles="true" verbose="true">
+				<include name="**/*.java"/>
+			</javac>
+			<echo>Compiling test java files</echo>
+			<javac srcdir="${test.dir}" destdir="${build.dir}" classpath="jarfile" debug="on" includeantruntime="true" listfiles="true"/>
+		</target>
+		<!--  junit tests are run conditionally if property run.automated is set to true-->
+		<target name="runTests" description="Run JUnit tests" if="run.automated">
+		    <junit printsummary="yes" dir="tests" fork="true">
+		        <classpath>
+		        	<pathelement location="lib/junit-4.11.jar" />
+		        	<pathelement location="${build.dir}"/>
+		        	 <pathelement location="${src.dir}"/>
+		        	 <pathelement location="${test.dir}" />
+		        	<path id="build.classpath">
+		        	  <fileset dir="lib">
+		        	      <include name="*.jar"/>
+		        	  </fileset>
+		        	 </path>
+		        </classpath>
+		        <test name="com.test.gwccnet.opencsv.AllTests" haltonfailure="true" outfile="test-results/csvutils">
+		            <formatter type="xml"/>
+		        </test>
+		    	<test name="com.test.gwccnet.utilities.AllTests" haltonfailure="true" outfile="test-results/utils">
+		    	     <formatter type="xml" />
+		    	</test>
+		    	<test name="com.test.gwccnet.utilities.generation.AllTests" haltonfailure="true" outfile="test-results/generate">
+		    	     <formatter type="xml" />
+		    	</test>
+		    	<test name="com.test.gwccnet.utility.AllTests" haltonfailure="true" outfile="test-results/toolbox">
+		    	     <formatter type="xml" />
+		    	</test>		    		
+		    </junit>
+		</target>
+		<target name="make_gw-utilities">
+			
+			
+			<echo>
+				Building gw-utilities.jar ...
+			</echo>
+			
+			<delete file="dist/gw-utilities.jar"/>
+			<jar jarfile="dist/gw-utilities.jar" update="true">
+				<fileset dir="src">
+					<include name="**/*.java"/>
+				</fileset>
+				<fileset dir="bin">
+					<include name="**/*.class"/>
+					<exclude name="**/test/**"/>
+				</fileset>
+				<manifest>
+					<attribute name="Sealed" value="true"/>
+				</manifest>
+			</jar>
+		</target>
+		
+		<target name="copy_gw-utilities" unless="run.automated">
+			<echo>
+				Copying gw-utilities.jar ...
+			</echo>
+			<copy file="dist/gw-utilities.jar" todir="C:\temp\jar_exports"/>
+			
+		</target>
+
+		<target name="refresh" unless="run.automated">
+			<echo>
+				Refreshing workspace ...
+			</echo>
+			<eclipse.refreshLocal resource="Utilities/dist/" depth="infinite"/>
+		</target>
+			
+	</project>

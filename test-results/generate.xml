@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="GC-HO-KKRUEG0D2" name="com.test.gwccnet.utilities.generation.AllTests" skipped="0" tests="3" time="0.047" timestamp="2014-01-15T13:17:14">
+  <properties>
+    <property name="ant.project.invoked-targets" value="main" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre7\bin" />
+    <property name="java.vm.version" value="23.25-b01" />
+    <property name="ant.library.dir" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="run.automated" value="true" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.script" value="" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\tests" />
+    <property name="java.runtime.version" value="1.7.0_25-b17" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="basedir" value="C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jre7\lib\endorsed" />
+    <property name="os.arch" value="x86" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\" />
+    <property name="ant.core.lib" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib\ant.jar" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="user.variant" value="" />
+    <property name="os.name" value="Windows 7" />
+    <property name="ant.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3" />
+    <property name="ant.file.type.Utilities.makeJar" value="file" />
+    <property name="build.dir" value="bin" />
+    <property name="ant.project.name" value="Utilities.makeJar" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Integrity\IntegrityClient10\bin;C:\Program Files (x86)\Common Files\Crystal Decisions\2.5\bin\NOTES\;C:\Program Files (x86)\Common Files\Crystal Decisions\2.5\bin\NOTES\DATA\;C:\Program Files (x86)\MKS\IntegrityClient\bin;C:\IBM\SDPRAC\AgentController\bin;C:\CA_APPSW;C:\Program Files (x86)\IBM\WebSphere MQ\Java\lib;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\Dell\Dell Data Protection\Access\Advanced\Wave\Gemalto\Access Client\v5\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files (x86)\IBM\WebSphere MQ\bin;C:\Program Files (x86)\IBM\WebSphere MQ\bin64;C:\Program Files (x86)\IBM\WebSphere MQ\tools\c\samples\bin;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files (x86)\Seagull\BlueZone;C:\Program Files (x86)\CA\AdvantageDatacomServer5.0;C:\Program Files (x86)\Common Files\Compuware;C:\Program Files (x86)\Compuware\File-AID_EX\;C:\Program Files (x86)\Compuware\File-AID_EX\dme;C:\PROGRA~2\INTEGR~1\Toolkit\mksnt;C:\PROGRA~2\COMPUW~1\DEVENT~1\BINW;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;;." />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.version" value="6.1" />
+    <property name="ant.file" value="C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\build.xml" />
+    <property name="user.home" value="C:\" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="user.name" value="GC-HO-KKRUEG0D2$" />
+    <property name="java.class.path" value="C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\junit-4.11.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\bin;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\src;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\DomTools.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\commons-beanutils.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\commons-collections-3.2.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\commons-lang-2.3.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\commons-logging-1.1.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\gw-DatabaseAccess.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\hamcrest-core-1.3.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\joda-time-1.5.2.jar;C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\lib\opencsv-2.0.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib\ant-launcher.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib\ant.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib\ant-junit.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Ant_AntInstallation\Ant_1.9.3\lib\ant-junit4.jar" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jre7" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.test.gwccnet.utilities.generation.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\test-results\generate.xml crashfile=C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\junitvmwatcher3857575994375784598.properties propsfile=C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\junit4832629105995164391.properties" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.version" value="1.7.0_25" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jre7\lib\resources.jar;C:\Program Files (x86)\Java\jre7\lib\rt.jar;C:\Program Files (x86)\Java\jre7\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre7\lib\jsse.jar;C:\Program Files (x86)\Java\jre7\lib\jce.jar;C:\Program Files (x86)\Java\jre7\lib\charsets.jar;C:\Program Files (x86)\Java\jre7\lib\jfr.jar;C:\Program Files (x86)\Java\jre7\classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="\" />
+    <property name="src.dir" value="src" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="ant.file.Utilities.makeJar" value="C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\build.xml" />
+    <property name="ant.file.type" value="file" />
+    <property name="sun.desktop" value="windows" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+  </properties>
+  <testcase classname="com.test.gwccnet.utilities.generation.ObjectFactoryTest" name="testGenerateSuccess" time="0.01" />
+  <testcase classname="com.test.gwccnet.utilities.generation.ObjectFactoryTest" name="testGenerateEmptyPath" time="0.0" />
+  <testcase classname="com.test.gwccnet.utilities.generation.ObjectFactoryTest" name="testGenerateEmptyFilePath" time="0.0" />
+  <system-out><![CDATA[ClassDiscovery: Package: com.gwccnet.web.utilities becomes Path:com/gwccnet/web/utilities
+ClassDiscovery: Resource = file:/C:/Rad%208.5%20Workspaces/gwUtilities%20GIT%202/Utilities/bin/com/gwccnet/web/utilities
+ClassDiscovery: FullPath = file:/C:/Rad%208.5%20Workspaces/gwUtilities%20GIT%202/Utilities/bin/com/gwccnet/web/utilities
+ClassDiscovery: Directory = C:\Rad 8.5 Workspaces\gwUtilities GIT 2\Utilities\bin\com\gwccnet\web\utilities
+ClassDiscovery: className = com.gwccnet.web.utilities.BreadCrumb
+ClassDiscovery: className = com.gwccnet.web.utilities.BreadCrumbHandler
+ClassDiscovery: className = com.gwccnet.web.utilities.Display
+ClassDiscovery: className = com.gwccnet.web.utilities.FormatRow
+ClassDiscovery: className = com.gwccnet.web.utilities.FormatRowFactory
+ClassDiscovery: className = com.gwccnet.web.utilities.FormatRowMalformedDataException
+ClassDiscovery: className = com.gwccnet.web.utilities.FormatRowTest
+ClassDiscovery: className = com.gwccnet.web.utilities.FormatRow_Impl
+ClassDiscovery: className = com.gwccnet.web.utilities.HTMLFormat
+ClassDiscovery: className = com.gwccnet.web.utilities.HTMLUtils
+ClassDiscovery: Package: com.gwccnet.test becomes Path:com/gwccnet/test
+ClassDiscovery: Resource = null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
