@@ -8,11 +8,22 @@
 		<property name="test.dir" value="tests"/>
 		<property name="build.dir" value="bin"/>
 		<target name="compile">
-			<javac description="Compiling java files" srcdir="${src.dir}" destdir="${build.dir}" classpath=".classpath" debug="on" includeantruntime="true" listfiles="true" verbose="true">
+			<classpath>
+			 <pathelement location="lib/junit-4.11.jar" />
+			        	<pathelement location="${build.dir}"/>
+			        	 <pathelement location="${src.dir}"/>
+			        	 <pathelement location="${test.dir}" />
+			        	<path id="build.classpath">
+			        	  <fileset dir="lib">
+			        	      <include name="*.jar"/>
+			        	  </fileset>
+			        	 </path>
+			  </classpath>
+			<javac description="Compiling java files" srcdir="${src.dir}" destdir="${build.dir}"  debug="on" includeantruntime="true" listfiles="true" verbose="true">
 				<include name="**/*.java"/>
 			</javac>
 			<echo>Compiling test java files</echo>
-			<javac srcdir="${test.dir}" destdir="${build.dir}" classpath=".classpath" debug="on" includeantruntime="true" listfiles="true"/>
+			<javac srcdir="${test.dir}" destdir="${build.dir}"  debug="on" includeantruntime="true" listfiles="true"/>
 		</target>
 		<!--  junit tests are run conditionally if property run.automated is set to true-->
 		<target name="runTests" description="Run JUnit tests" if="run.automated">
