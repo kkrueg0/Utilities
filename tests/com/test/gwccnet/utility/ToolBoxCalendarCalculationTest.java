@@ -55,7 +55,9 @@ public class ToolBoxCalendarCalculationTest
 		
 		int expectedMonths = 11;
 		int months = ToolBox.calculateMonthsInInterval(start, end);
-		throw new RuntimeException("Fail the test on purpose!");
+		
+		//Assert.assertEquals(expectedMonths, months);
+		Assert.assertEquals(12, months);
 	}
 	
 	@Test
