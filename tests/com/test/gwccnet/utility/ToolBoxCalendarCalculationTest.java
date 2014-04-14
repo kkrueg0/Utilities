@@ -68,8 +68,8 @@ public class ToolBoxCalendarCalculationTest
 		int expectedYears = 1;
 		int years = ToolBox.calculateYearsInInterval(start, end);
 		
-		//Assert.assertEquals(expectedYears, years);
-		Assert.assertEquals(3, years);
+		Assert.assertEquals(expectedYears, years);
+		//Assert.assertEquals(3, years);
 	}
 
 	@Test
