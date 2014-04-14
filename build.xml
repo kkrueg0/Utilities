@@ -8,41 +8,27 @@
 		<property name="test.dir" value="tests"/>
 		<property name="build.dir" value="bin"/>
 		<path id="project.class.path">  
-	        	<pathelement location="lib/junit-4.11.jar" />
-	        	<pathelement location="${build.dir}"/>
-	        	 <pathelement location="${src.dir}"/>
-	        	 <pathelement location="${test.dir}" />
-	        	<path id="build.classpath">
-	        	  <fileset dir="lib">
-	        	      <include name="*.jar"/>
-	        	  </fileset>
-	        	 </path>
+        	<pathelement location="lib/junit-4.11.jar" />
+        	<pathelement location="${build.dir}"/>
+        	 <pathelement location="${src.dir}"/>
+        	 <pathelement location="${test.dir}" />
+        	<path id="build.classpath">
+        	  <fileset dir="lib">
+        	      <include name="*.jar"/>
+        	  </fileset>
+        	 </path>
 		</path>
 		<target name="compile">
-			
 			<javac classpathref="project.class.path" description="Compiling java files" srcdir="${src.dir}" destdir="${build.dir}"  debug="on" includeantruntime="true" listfiles="true" verbose="true">
 				<include name="**/*.java"/>
-			      			
 			</javac>
 			<echo>Compiling test java files</echo>
 			<javac classpathref="project.class.path" srcdir="${test.dir}" destdir="${build.dir}"  debug="on" includeantruntime="true" listfiles="true">
-			       			
 			</javac>
 		</target>
 		<!--  junit tests are run conditionally if property run.automated is set to true-->
 		<target name="runTests" description="Run JUnit tests" if="run.automated">
-		    <junit printsummary="yes" dir="tests" fork="true">
-		        <classpath>
-		        	<pathelement location="lib/junit-4.11.jar" />
-		        	<pathelement location="${build.dir}"/>
-		        	 <pathelement location="${src.dir}"/>
-		        	 <pathelement location="${test.dir}" />
-		        	<path id="build.classpath">
-		        	  <fileset dir="lib">
-		        	      <include name="*.jar"/>
-		        	  </fileset>
-		        	 </path>
-		        </classpath>
+		    <junit classpathref="project.class.path" printsummary="yes" dir="tests" fork="true">
 		        <test name="com.test.gwccnet.opencsv.AllTests" haltonfailure="true" outfile="test-results/csvutils">
 		            <formatter type="xml"/>
 		        </test>
@@ -58,12 +44,9 @@
 		    </junit>
 		</target>
 		<target name="make_gw-utilities">
-			
-			
 			<echo>
 				Building gw-utilities.jar ...
 			</echo>
-			
 			<delete file="dist/gw-utilities.jar"/>
 			<jar jarfile="dist/gw-utilities.jar" update="true">
 				<fileset dir="src">
@@ -86,7 +69,6 @@
 			<copy file="dist/gw-utilities.jar" todir="C:\temp\jar_exports"/>
 			
 		</target>
-
 		<target name="refresh" unless="run.automated">
 			<echo>
 				Refreshing workspace ...
