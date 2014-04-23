@@ -55,8 +55,8 @@ public class ToolBoxCalendarCalculationTest
 		int expectedMonths = 11;
 		int months = ToolBox.calculateMonthsInInterval(start, end);
 		
-		Assert.assertEquals(expectedMonths, months);
-		//Assert.assertEquals(12, months);
+		//Assert.assertEquals(expectedMonths, months);
+		Assert.assertEquals(12, months);
 	}
 	
 	@Test
